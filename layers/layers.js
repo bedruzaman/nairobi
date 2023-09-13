@@ -39,13 +39,13 @@ var lyr_REFERENCE_2 = new ol.layer.Image({
                                 imageExtent: [4075000.206831, -161661.236187, 4132028.096240, -124698.334926]
                             })
                         });
-var lyr_PREDICTION_UNET_3 = new ol.layer.Image({
+var lyr_SENTINEL2_UNET_PREDICTION_3 = new ol.layer.Image({
                             opacity: 1,
-                            title: "PREDICTION_UNET",
+                            title: "SENTINEL2_UNET_PREDICTION",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/PREDICTION_UNET_3.png",
+                               url: "./layers/SENTINEL2_UNET_PREDICTION_3.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
@@ -53,8 +53,8 @@ var lyr_PREDICTION_UNET_3 = new ol.layer.Image({
                             })
                         });
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_CITYBOUNDARY_1.setVisible(true);lyr_REFERENCE_2.setVisible(true);lyr_PREDICTION_UNET_3.setVisible(true);
-var layersList = [lyr_GoogleSatellite_0,lyr_CITYBOUNDARY_1,lyr_REFERENCE_2,lyr_PREDICTION_UNET_3];
+lyr_GoogleSatellite_0.setVisible(true);lyr_CITYBOUNDARY_1.setVisible(true);lyr_REFERENCE_2.setVisible(true);lyr_SENTINEL2_UNET_PREDICTION_3.setVisible(true);
+var layersList = [lyr_GoogleSatellite_0,lyr_CITYBOUNDARY_1,lyr_REFERENCE_2,lyr_SENTINEL2_UNET_PREDICTION_3];
 lyr_CITYBOUNDARY_1.set('fieldAliases', {'ADM1_EN': 'ADM1_EN', 'ADM1_PCODE': 'ADM1_PCODE', 'validOn': 'validOn', 'rasterize': 'rasterize', 'area': 'area', });
 lyr_CITYBOUNDARY_1.set('fieldImages', {'ADM1_EN': '', 'ADM1_PCODE': '', 'validOn': '', 'rasterize': '', 'area': '', });
 lyr_CITYBOUNDARY_1.set('fieldLabels', {'ADM1_EN': 'no label', 'ADM1_PCODE': 'no label', 'validOn': 'no label', 'rasterize': 'no label', 'area': 'no label', });
